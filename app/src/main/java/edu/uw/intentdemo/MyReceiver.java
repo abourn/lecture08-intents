@@ -17,7 +17,8 @@ public class MyReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         Log.v(TAG, intent.toString());
         if (intent.getAction() == Intent.ACTION_BATTERY_LOW) {
-            Toast.makeText(context, "Plug in your phone", Toast.LENGTH_SHORT);
+            Toast.makeText(context, "Plug in your phone", Toast.LENGTH_SHORT).show();
+
         }
 
     }
